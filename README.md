@@ -8,7 +8,10 @@
 ## Setup
 1. Install prerequisites (Rust, DFX).
 2. Build and deploy the wallet:
-cargo build --target wasm32-unknown-unknown --release dfx deploy wallet
+cargo build --target wasm32-unknown-unknown --release
+dfx start --background
+dfx deploy wallet
+
 
 ## Usage
 - Call the `send_token`, `receive_token`, and `check_balance` methods.
